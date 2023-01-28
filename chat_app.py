@@ -1,12 +1,13 @@
 import streamlit as st
 import openai
 
-openai.api_key = "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"
+openai.api_key = "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"
 model = openai.Model.retrieve("text-davinci-003")
 
 st.title("Chat with something more intelligent than you!")
 st.sidebar.header("Instructions")
-st.sidebar.info("""Just aks any question you want and the chat bot will give you an answer! Depending on your task, you can choose different models:\n
+st.sidebar.info("""Just aks any question you want and the chat bot will give you an answer! 
+Depending on your task, you can choose different models:\n
 model 1: 'text-davinci-003' very good for question and answer\n
 model 2: 'curie' for sentiment and summarization\n
 model 3: 'ada' good for classification tasks""")
